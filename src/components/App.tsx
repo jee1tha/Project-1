@@ -13,7 +13,7 @@ class App extends React.Component {
             <Router >
                 <div className="app">
                     <Layout style={{minHeight: '100vh'}}>
-                        <AppHeader/>
+                        <AppHeader />
                         <Layout style={{display: 'flex', alignItems: 'stretch'}}>
                             <AppSideBar/>
                             <Layout style={{padding: '0 24px 0'}}>
