@@ -7,7 +7,7 @@ module.exports = {
         extensions: ['.ts', '.tsx','.js']
     },
     output: {
-        path: path.join(__dirname,'/dist'),
+        path: path.join(__dirname,'/public'),
         filename: 'index_bundle.js'
     },
     module: {
