@@ -1,9 +1,13 @@
 import * as React from 'react';
 import { Layout  } from 'antd';
+import {ReactNode} from "react";
 const { Content } = Layout;
 
+interface AppContentProps {
+    children : ReactNode
+}
 
-const AppContent = () => (<Content
+const AppContent = (props : AppContentProps ) => (<Content
     style={{
         background: '#fff',
         padding: 24,
@@ -11,7 +15,7 @@ const AppContent = () => (<Content
         minHeight: 280,
     }}
 >
-    Content
+        {props.children}
 </Content>
 );
 
