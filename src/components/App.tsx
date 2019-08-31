@@ -6,6 +6,8 @@ import AppSideBar from "./layout/AppSideBar";
 import AppFooter from "./layout/AppFooter";
 import AppContent from "./layout/AppContent";
 import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import Registrations from "./registration/Registration";
+import Login from "./login/Login";
 
 class App extends React.Component {
     render() {
@@ -22,6 +24,8 @@ class App extends React.Component {
                                         <Route exact path="/" component= {() => (<div> Home </div>) }/>
                                         <Route path="/sales" component={() => (<div> Sales</div>) }/>
                                         <Route path="/inventory" component={() => (<div>inventory</div>) }/>
+                                        <Route path="/login" component={() => (<Login/>) }/>
+                                        <Route path="/register" component={() => (<Registrations/>) }/>
                                         <Route component={() => (<div></div>) }/>
                                     </Switch>
                                 </AppContent>

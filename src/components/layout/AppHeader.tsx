@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import { Layout, Menu  } from 'antd';
 import {RouterProps} from "react-router";
+import Avatar from "antd/es/avatar";
 const { Header } = Layout;
 
 const AppHeader = (props : RouterProps) => {
@@ -33,6 +34,7 @@ const AppHeader = (props : RouterProps) => {
                 <Menu.Item style={{float: "right"}} key="/login">
                     <Link to="/login" className="nav-text">Login</Link>
                 </Menu.Item>
+                <Avatar shape="square" size={50} icon="user" style={{float: "right", marginTop: "7px"}}/>
             </Menu>
         </Header>
     );
